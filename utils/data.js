@@ -8,7 +8,7 @@ const data = {
       price: 70,
       brand: "Chaska",
       rating: 4.5,
-      numReviews: 8,
+      numReviews: 15,
       countInStock: 20,
       description: "A popular shirt",
     },
