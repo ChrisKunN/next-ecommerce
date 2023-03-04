@@ -33,7 +33,7 @@ export default function Layout({ title, children }) {
               Chaska Shop
             </Link>
             <div>
-              <Link className="p-2" href="/Cart">
+              <Link className="p-2" href="/cart">
                 Cart
                 {cartItemsCount > 0 && (
                   <span className="ml-1 rounded-full bg-red-600 px-2 py-1 text-xs font-bold text-white">
@@ -43,7 +43,7 @@ export default function Layout({ title, children }) {
                   </span>
                 )}
               </Link>
-              <Link className="p-2" href="/Login">
+              <Link className="p-2" href="/login">
                 Login
               </Link>
             </div>
