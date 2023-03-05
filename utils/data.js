@@ -57,7 +57,7 @@ const data = {
     },
     {
       name: "Wolf White Shirt",
-      slug: "wolf-shirt",
+      slug: "wolf-shirt-white",
       category: "Shirts",
       image: "/images/loboBlanca.png",
       price: 70,
@@ -69,7 +69,7 @@ const data = {
     },
     {
       name: "Lion Black Shirt",
-      slug: "lion-shirt",
+      slug: "lion-shirt-black",
       category: "Shirts",
       image: "/images/leonNegra.png",
       price: 70,
