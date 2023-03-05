@@ -19,7 +19,10 @@ export default function ProductItem({ product }) {
         <p className="mb-2">{product.brand}</p>
         <p>${product.price}</p>
         <button className="primary-button" type="button">
-          Add to Cart
+          <Link href={`/product/${product.slug}`}>
+            Buy Now
+          </Link>
+
         </button>
       </div>
     </div>
