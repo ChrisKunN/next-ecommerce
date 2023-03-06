@@ -53,10 +53,7 @@ export default function PlaceOrderScreen() {
                 JSON.stringify({
                     ...cart,
                     cartItems: [],
-                }),
-                {
-                    domain: '.next-ecommerce-ietu5yyaf-chriskunn.vercel.app/placeorder',
-                }
+                })
             );
             router.push(`/order/${data._id}`);
         } catch (err) {
