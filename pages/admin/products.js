@@ -120,7 +120,7 @@ export default function AdminProdcutsScreen() {
                         <button
                             disabled={loadingCreate}
                             onClick={createHandler}
-                            className="primary-button"
+                            className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-2 rounded"
                         >
                             {loadingCreate ? 'Loading' : 'Create'}
                         </button>
