@@ -154,7 +154,7 @@ export default function AdminProdcutsScreen() {
                                             <td className=" p-5 ">{product.rating}</td>
                                             <td className=" p-5 ">
                                                 <Link href={`/admin/product/${product._id}`}>
-                                                    <button type='button' className='default-button'>
+                                                    <button type='button' className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-2 rounded'>
                                                         Edit
                                                     </button>
 
@@ -162,7 +162,7 @@ export default function AdminProdcutsScreen() {
                                                 &nbsp;
                                                 <button
                                                     onClick={() => deleteHandler(product._id)}
-                                                    className="default-button"
+                                                    className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-2 rounded"
                                                     type="button"
                                                 >
                                                     Delete
