@@ -9,6 +9,8 @@ import { ToastContainer } from 'react-toastify';
 import { Menu } from "@headlessui/react";
 import DropdownLink from "./DropdownLink";
 import 'react-toastify/dist/ReactToastify.css';
+import { useRouter } from 'next/router';
+import { SearchIcon } from '@heroicons/react/outline';
 
 export default function Layout({ title, children }) {
 
@@ -34,8 +36,17 @@ export default function Layout({ title, children }) {
 
     signOut({ callbackUrl: '/login' });
 
+
   };
 
+  const [query, setQuery] = useState('');
+
+  const router = useRouter();
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    router.push(`/search?query=${query}`);
+  }
 
   return (
     <>
@@ -60,7 +71,24 @@ export default function Layout({ title, children }) {
               Chaska Shop
 
             </Link>
-
+            <form
+              onSubmit={submitHandler}
+              className="mx-auto  hidden w-84 justify-center md:flex"
+            >
+              <input
+                onChange={(e) => setQuery(e.target.value)}
+                type="text"
+                className="rounded-tr-none rounded-br-none p-1 text-sm   focus:ring-0"
+                placeholder="Search products"
+              />
+              <button
+                className="rounded rounded-tl-none rounded-bl-none bg-amber-300 p-1 text-sm dark:text-black"
+                type="submit"
+                id="button-addon2"
+              >
+                <SearchIcon className="h-5 w-5"></SearchIcon>
+              </button>
+            </form>
             <div>
 
               <Link className="p-2" href="/cart">

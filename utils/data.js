@@ -30,6 +30,8 @@ const data = {
       numReviews: 15,
       countInStock: 20,
       description: "A popular shirt",
+      isFeatured: true,
+      banner: '/images/osoNegra.png',
     },
     {
       name: "Wolf Shirt",
@@ -42,6 +44,8 @@ const data = {
       numReviews: 20,
       countInStock: 20,
       description: "A popular shirt",
+      isFeatured: true,
+      banner: '/images/loboBlanca.png',
     },
     {
       name: "Skeleton Shirt",
