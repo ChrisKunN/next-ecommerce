@@ -64,9 +64,9 @@ export default function Layout({ title, children }) {
 
         <header>
 
-          <nav className="flex h-12 items-center px-4 justify-between shadow-md">
+          <nav className="flex h-20 items-center px-10 justify-between shadow-md">
 
-            <Link className="text-lg font-bold" href="/">
+            <Link className="text-xl font-bold" href="/">
 
               Chaska Shop
 
@@ -120,7 +120,7 @@ export default function Layout({ title, children }) {
 
                   </Menu.Button>
 
-                  <Menu.Items className="absolute right-0 w-56 origin-top-right bg-white  shadow-lg ">
+                  <Menu.Items className="absolute right-0 w-56 origin-top-right bg-white  shadow-lg z-10 ">
 
                     <Menu.Item>
 
